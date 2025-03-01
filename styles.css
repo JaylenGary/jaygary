@@ -1,14 +1,147 @@
-h1 {
-    color: green;
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
 
-.image-container{
-    border: 5px solid black;
-    width: 200px;
-    height: 200px;
-    overflow: hidden;
+body {
+    text-align: center;
 }
 
-h2 {
-    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+/* Header */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background: url('https://i.postimg.cc/G3Q15vrP/temp-Imagek0-Nk-NS.avif') no-repeat center center/cover;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: black;
+}
+
+.hero-content {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+}
+
+.hero-left h2 {
+    font-family: 'Rye', cursive;
+    font-size: 36px;
+}
+
+.hero-left img {
+    width: 300px;
+}
+
+.hero-right p {
+    font-family: 'Saira Condensed', sans-serif;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.hero-right button {
+    background: black;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+/* Features Section */
+.features {
+    display: flex;
+    justify-content: center;
+    gap: 50px;
+    padding: 50px;
+}
+
+.feature {
+    width: 250px;
+    text-align: center;
+}
+.feature p {
+    border: 2px solid #85EBFD; /* Blue border around paragraphs */
+    padding: 10px; /* Adds spacing inside the border */
+    margin-top: 10px; /* Spacing from the heading */
+    border-radius: 5px; /* Slightly rounded corners */
+    background-color: #f9f9f9; /* Light background for contrast */
+}
+
+.feature h3 {
+    font-family: 'Rye', cursive;
+}
+
+.feature img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    display: block;
+    margin: 0 auto;
+}
+
+.feature a {
+    display: block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: blue;
+}
+
+/* Footer */
+footer {
+    background: #a7e2f2;
+    padding: 20px;
+}
+
+.footer-nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.footer-nav ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.social-icons img {
+    width: 30px;
+    margin: 5px;
+}
+
+.newsletter input {
+    padding: 5px;
+    margin-top: 10px;
+}
+
+.back-to-top {
+    margin-top: 20px;
+    padding: 10px;
+    background: black;
+    color: white;
+    border: none;
+    cursor: pointer;
 }
